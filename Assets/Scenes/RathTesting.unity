@@ -353,6 +353,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mold: {fileID: 538417314}
   holdDownDuration: 0
+  spriteArray:
+  - {fileID: 9080945719425843878, guid: 4b4e02297a5373844ae0f8fd3573868c, type: 3}
+  - {fileID: -955563991059535574, guid: 4b4e02297a5373844ae0f8fd3573868c, type: 3}
+  - {fileID: 212006319520566141, guid: 4b4e02297a5373844ae0f8fd3573868c, type: 3}
+  - {fileID: -4603675104150053021, guid: 4b4e02297a5373844ae0f8fd3573868c, type: 3}
+  - {fileID: 5012127375275452699, guid: 4b4e02297a5373844ae0f8fd3573868c, type: 3}
 --- !u!4 &1676796078
 Transform:
   m_ObjectHideFlags: 0

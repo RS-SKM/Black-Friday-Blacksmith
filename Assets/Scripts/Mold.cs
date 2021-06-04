@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class Mold : MonoBehaviour
 {
-    float duration;
-    //float fill = 1f;
+    /*float duration;
     float maxHoldDownDuration = 3.5f;
 
     public void SetHoldDownDuration(float amount)
@@ -27,7 +26,7 @@ public class Mold : MonoBehaviour
         {
             Debug.Log("Overfilled");
         }
-    }
+    }*/
 
     void Update()
     {
