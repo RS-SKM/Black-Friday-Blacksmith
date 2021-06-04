@@ -18,5 +18,6 @@ public class Crucible : MonoBehaviour
         } else {
             anim.SetBool("PlayerInput", false);
         }
+        
     }
 }
