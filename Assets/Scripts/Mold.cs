@@ -4,16 +4,33 @@ using UnityEngine;
 
 public class Mold : MonoBehaviour
 {
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            Debug.Log("Button down");
-        }
+    float duration;
+    //float fill = 1f;
+    float maxHoldDownDuration = 3.5f;
 
-        if (Input.GetKeyUp(KeyCode.Space))
+    public void SetHoldDownDuration(float amount)
+    {
+        duration = amount;
+        if (duration >= 1f)
         {
-            Debug.Log("Button up");
+            Debug.Log("1/3 filled");
+        }    
+        if (duration >= 2f)
+        {
+            Debug.Log("2/3 filled");
+        }
+        if (duration >= 3f)
+        {
+            Debug.Log("Filled");
+        }
+        if (duration > maxHoldDownDuration)
+        {
+            Debug.Log("Overfilled");
         }
     }
+
+    void Update()
+    {
+    }
 }
+
