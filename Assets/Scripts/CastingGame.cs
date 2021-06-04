@@ -16,55 +16,84 @@ public class CastingGame : MonoBehaviour
     public void ButtonHeldDown() {}
     public void ButtonRelease() {}
 
+    Animator anim;
+
+    private void Awake()
+    {
+        anim = GameObject.Find("Crucible").GetComponent<Animator>();
+    }
+
     void Start()
     {
         myRenderer = GameObject.Find("Sword Mold").GetComponent<SpriteRenderer>();
         myRenderer.sprite = spriteArray[0];
     }
- 
-
 
     void Update()
     {
+        SetHoldDownDuration();
         if (Input.GetKeyDown(KeyCode.Space))
         {
             Debug.Log("Button down");
+            anim.SetBool("PlayerInput", true);
             buttonHeldDown = true;
         }
 
         if (Input.GetKeyUp(KeyCode.Space))
         {
             Debug.Log("Button up");
+            anim.SetBool("PlayerInput", false);
             buttonHeldDown = false;
-            SetHoldDownDuration(); 
         }
 
         if (buttonHeldDown)
         {
             holdDownDuration += Time.deltaTime * gameSpeed;
         }
-    }  
+    }
+
+    //save processing power by only checking once
+    bool oneTime1 = false;
+    bool oneTime2 = false;
+    bool oneTime3 = false;
+    bool oneTime4 = false;
     public void SetHoldDownDuration()
     {
-        if (holdDownDuration >= 1f)
+        if (!oneTime1)
         {
-            Debug.Log("1/3 filled");
-            myRenderer.sprite = spriteArray[1];
+            if (holdDownDuration >= 1f)
+            {
+                Debug.Log("1/3 filled");
+                myRenderer.sprite = spriteArray[1];
+                oneTime1 = true;
+            }
         }
-        if (holdDownDuration >= 2f)
+        if (!oneTime2)
         {
-            Debug.Log("2/3 filled");
-            myRenderer.sprite = spriteArray[2];
+            if (holdDownDuration >= 2f)
+            {
+                Debug.Log("2/3 filled");
+                myRenderer.sprite = spriteArray[2];
+                oneTime2 = true;
+            }
         }
-        if (holdDownDuration >= 3f)
+        if (!oneTime3)
         {
-            Debug.Log("Filled");
-            myRenderer.sprite = spriteArray[3];
+            if (holdDownDuration >= 3f)
+            {
+                Debug.Log("Filled");
+                myRenderer.sprite = spriteArray[3];
+                oneTime3 = true;
+            }
         }
-        if (holdDownDuration > maxHoldDownDuration)
+        if (!oneTime4)
         {
-            Debug.Log("Overfilled");
-            myRenderer.sprite = spriteArray[4];
+            if (holdDownDuration > maxHoldDownDuration)
+            {
+                Debug.Log("Overfilled");
+                myRenderer.sprite = spriteArray[4];
+                oneTime4 = true;
+            }
         }
     }
 }
