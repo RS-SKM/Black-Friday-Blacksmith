@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class CastingGame : MonoBehaviour
 {
-    [SerializeField] private Mold mold;
     bool buttonHeldDown;
     public float holdDownDuration;
     float gameSpeed = 1;
