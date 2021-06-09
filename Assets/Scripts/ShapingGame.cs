@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HammerGame : MonoBehaviour
+public class ShapingGame : MonoBehaviour
 {
     public float gameSpeed;
     bool animating;
