@@ -10,6 +10,7 @@ public class GameMaster : MonoBehaviour
     int lastGame = 10;
     int currentGame = 10;
     int gameSpeed = 1;
+    int rounds = 0;
 
     public int GetGameSpeed() {
         return gameSpeed;
@@ -23,6 +24,18 @@ public class GameMaster : MonoBehaviour
             masterInstance = this;
         } else {
             Object.Destroy(this.gameObject);
+        }
+    }
+
+    private void Update() {
+        if( Input.GetKeyDown("1") ) {
+            SceneManager.LoadScene(2);
+        }
+        if( Input.GetKeyDown("2") ) {
+            SceneManager.LoadScene(3);
+        }
+        if( Input.GetKeyDown("3") ) {
+            SceneManager.LoadScene(4);
         }
     }
 
@@ -41,6 +54,11 @@ public class GameMaster : MonoBehaviour
             if (lives <= 0) {
                 SceneManager.LoadScene(5);
             }
+        }
+        rounds = +1;
+        if( rounds > 4 ) {
+            rounds = 0;
+            gameSpeed += 1;
         }
     }
 }
