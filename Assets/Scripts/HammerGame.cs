@@ -24,7 +24,7 @@ public class HammerGame : MonoBehaviour
     void Update()
     {
         if( !animating ) {
-            transform.position = new Vector3(0.6f + Mathf.Sin(Time.time * 2 * gameSpeed) * 5, 1.44f, 0);
+            transform.position = new Vector3(-0.001499992f + Mathf.Sin(Time.time * 2 * gameSpeed) * 0.7f, -0.02349999f, 0);
         }
 
         if( Input.GetKeyDown(KeyCode.Space) ) {
