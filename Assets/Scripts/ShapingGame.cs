@@ -10,12 +10,14 @@ public class ShapingGame : MonoBehaviour
     public GameObject[] indicators;
     public float margin;
     bool fail = false;
+    TimerShapingGame timerSG;
     GameMaster gM;
 
     // Start is called before the first frame update
     void Awake()
     {
         anim = this.GetComponent<Animator>();
+        timerSG = GameObject.Find("Timer").GetComponent<TimerShapingGame>();
         gM = GameObject.Find("GameMaster").GetComponent<GameMaster>();
         gameSpeed = gM.GetGameSpeed();
     }
@@ -63,7 +65,7 @@ public class ShapingGame : MonoBehaviour
 
     void VictoryCheck() {
         if( !indicators[0] && !indicators[1] && !fail) {
-            gM.GameOutcome(true);
+            timerSG.VictoryCheck(true);
         }
     }
 }

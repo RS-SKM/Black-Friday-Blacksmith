@@ -9,9 +9,11 @@ public class HammeringGame : MonoBehaviour
     SpriteRenderer swordSpriteRenderer;
     SpriteRenderer hammerSpriteRenderer;
     int swordSpriteOrder = 0;
+    TimerHammeringGame timerHG;
 
     void Start()
     {
+        timerHG = GameObject.Find("Timer").GetComponent<TimerHammeringGame>();
         swordSpriteRenderer = GameObject.Find("Sword").GetComponent<SpriteRenderer>();
         swordSpriteRenderer.sprite = swordSpriteArray[0];
         hammerSpriteRenderer = GameObject.Find("Hammer").GetComponent<SpriteRenderer>();
@@ -27,6 +29,7 @@ public class HammeringGame : MonoBehaviour
             hammerSpriteRenderer.sprite = hammerSpriteArray[1];
             StartCoroutine(hammerSpriteWait());
             swordSpriteRenderer.sprite = swordSpriteArray[swordSpriteOrder];
+            VictoryCheck();
             
         }
 
@@ -37,6 +40,18 @@ public class HammeringGame : MonoBehaviour
         }
     }
 
+    void VictoryCheck()
+    {
+        if(swordSpriteOrder == 3)
+        {
+            timerHG.VictoryCheck(true);
+        }
+
+        if(swordSpriteOrder == 4)
+        {
+            timerHG.VictoryCheck(false);
+        }
+    }
     //really janky substitute for an animator
     IEnumerator hammerSpriteWait()
     {

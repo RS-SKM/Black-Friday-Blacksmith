@@ -49,6 +49,7 @@ public class GameMaster : MonoBehaviour
     }
 
     public void GameOutcome(bool success ) {
+        Debug.Log(success);
         if( !success ) {
             lives -= 1;
             if (lives <= 0) {

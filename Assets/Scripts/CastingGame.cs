@@ -8,18 +8,16 @@ public class CastingGame : MonoBehaviour
     public float holdDownDuration;
     float gameSpeed = 1;
     float maxHoldDownDuration = 3.5f;
+    TimerCastingGame timerCG;
 
     public Sprite[] spriteArray;
     SpriteRenderer myRenderer;
-
-    public void ButtonHeldDown() {}
-    public void ButtonRelease() {}
-
     Animator anim;
 
     private void Awake()
     {
         anim = GameObject.Find("Crucible").GetComponent<Animator>();
+        timerCG = GameObject.Find("Timer").GetComponent<TimerCastingGame>();
     }
 
     void Start()
@@ -83,6 +81,7 @@ public class CastingGame : MonoBehaviour
                 Debug.Log("Filled");
                 myRenderer.sprite = spriteArray[3];
                 oneTime3 = true;
+                timerCG.VictoryCheck(true);
             }
         }
         if (!oneTime4)
@@ -92,6 +91,7 @@ public class CastingGame : MonoBehaviour
                 Debug.Log("Overfilled");
                 myRenderer.sprite = spriteArray[4];
                 oneTime4 = true;
+                timerCG.VictoryCheck(false);
             }
         }
     }
