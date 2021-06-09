@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameMaster : MonoBehaviour
 {
@@ -20,25 +21,20 @@ public class GameMaster : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     void ChangeGame() {
-        currentGame = Random.Range(0, 2);
-        if ( currentGame == lastGame ) {
-            return;
+        currentGame = Random.Range(1, 3);
+        while( currentGame == lastGame ) {
+            currentGame = Random.Range(0, 3);
         }
         Debug.Log("Game chosen is " + currentGame);
+        SceneManager.LoadScene(currentGame);
     }
 
     public void GameOutcome(bool success ) {
         if( !success ) {
             lives -= 1;
             if (lives <= 0) {
-
+                
             }
         }
     }
