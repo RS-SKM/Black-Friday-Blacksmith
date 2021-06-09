@@ -9,10 +9,10 @@ public class GameMaster : MonoBehaviour
     static GameMaster masterInstance;
     int lastGame = 10;
     int currentGame = 10;
-    int gameSpeed = 1;
+    float gameSpeed = 1;
     int rounds = 0;
 
-    public int GetGameSpeed() {
+    public float GetGameSpeed() {
         return gameSpeed;
     }
     
