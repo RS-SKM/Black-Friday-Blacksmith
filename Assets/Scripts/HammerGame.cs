@@ -10,11 +10,13 @@ public class HammerGame : MonoBehaviour
     public GameObject[] indicators;
     public float margin;
     public bool victory = false;
+    GameMaster gM;
 
     // Start is called before the first frame update
     void Awake()
     {
         anim = this.GetComponent<Animator>();
+        gM = GameObject.Find("GameMaster").GetComponent<GameMaster>();
     }
 
     // Update is called once per frame
@@ -56,6 +58,7 @@ public class HammerGame : MonoBehaviour
     void VictoryCheck() {
         if( !indicators[0] && !indicators[1] ) {
             victory = true;
+            
         }
     }
 }

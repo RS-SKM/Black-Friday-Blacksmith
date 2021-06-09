@@ -8,8 +8,13 @@ public class GameMaster : MonoBehaviour
     int lives;
     static GameMaster masterInstance;
     int lastGame;
-    int currentGame;
+    int currentGame = 10;
+    int gameSpeed = 1;
 
+    public int GetGameSpeed() {
+        return gameSpeed;
+    }
+    
     // Start is called before the first frame update
     void Awake()
     {
@@ -21,8 +26,8 @@ public class GameMaster : MonoBehaviour
         }
     }
 
-    void ChangeGame() {
-        currentGame = Random.Range(1, 3);
+    public void ChangeGame() {
+        currentGame = Random.Range(2, 4);
         while( currentGame == lastGame ) {
             currentGame = Random.Range(0, 3);
         }
