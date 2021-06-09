@@ -1,0 +1,684 @@
+fileFormatVersion: 2
+guid: eb9ed743ab8ba844db129d152bdcdbc7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8072611724728517823
+    second: blacksmith_background_0
+  - first:
+      213: 421043217489089533
+    second: blacksmith_background_1
+  - first:
+      213: -3953612313347818029
+    second: blacksmith_background_2
+  - first:
+      213: 5478805480348171579
+    second: blacksmith_background_3
+  - first:
+      213: -6338996154767151117
+    second: blacksmith_background_4
+  - first:
+      213: -4532204701562602291
+    second: blacksmith_background_5
+  - first:
+      213: 6872763814597112776
+    second: blacksmith_background_6
+  - first:
+      213: 1651321571173809343
+    second: blacksmith_background_7
+  - first:
+      213: -5493497134758390612
+    second: blacksmith_background_8
+  - first:
+      213: 6237352181598522002
+    second: blacksmith_background_9
+  - first:
+      213: -7103046894262170061
+    second: blacksmith_background_10
+  - first:
+      213: -5338334694189493511
+    second: blacksmith_background_11
+  - first:
+      213: 7621276272458107453
+    second: blacksmith_background_12
+  - first:
+      213: -895884228710630855
+    second: blacksmith_background_13
+  - first:
+      213: -7817410360555400262
+    second: blacksmith_background_14
+  - first:
+      213: 2605728666297605094
+    second: blacksmith_background_15
+  - first:
+      213: 1000490369317202382
+    second: blacksmith_background_16
+  - first:
+      213: 6401713334792135330
+    second: blacksmith_background_17
+  - first:
+      213: -4175062601166423640
+    second: blacksmith_background_18
+  - first:
+      213: -8311801179946131715
+    second: blacksmith_background_19
+  - first:
+      213: 7194057644884876965
+    second: blacksmith_background_20
+  - first:
+      213: -8791026993346845386
+    second: blacksmith_background_21
+  - first:
+      213: 2745855354519812094
+    second: blacksmith_background_22
+  - first:
+      213: -3796014499260526222
+    second: blacksmith_background_23
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: blacksmith_background_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 368
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14b37e9286258ff80800000000000000
+      internalID: -8072611724728517823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blacksmith_background_1
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 0
+        width: 368
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df356855398d7d500800000000000000
+      internalID: 421043217489089533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blacksmith_background_2
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 0
+        width: 368
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ddfa435c82f129c0800000000000000
+      internalID: -3953612313347818029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blacksmith_background_3
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 0
+        width: 368
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3dbd917e80a80c40800000000000000
+      internalID: 5478805480348171579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blacksmith_background_4
+      rect:
+        serializedVersion: 2
+        x: 1472
+        y: 0
+        width: 368
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ff698a259c5708a0800000000000000
+      internalID: -6338996154767151117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blacksmith_background_5
+      rect:
+        serializedVersion: 2
+        x: 1840
+        y: 0
+        width: 368
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcc710a26df5a11c0800000000000000
+      internalID: -4532204701562602291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blacksmith_background_6
+      rect:
+        serializedVersion: 2
+        x: 2208
+        y: 0
+        width: 368
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c33832a646f06f50800000000000000
+      internalID: 6872763814597112776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blacksmith_background_7
+      rect:
+        serializedVersion: 2
+        x: 2576
+        y: 0
+        width: 368
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbc31cb483caae610800000000000000
+      internalID: 1651321571173809343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blacksmith_background_8
+      rect:
+        serializedVersion: 2
+        x: 2944
+        y: 0
+        width: 368
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca49914367d23c3b0800000000000000
+      internalID: -5493497134758390612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blacksmith_background_9
+      rect:
+        serializedVersion: 2
+        x: 3312
+        y: 0
+        width: 368
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29a003323c68f8650800000000000000
+      internalID: 6237352181598522002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blacksmith_background_10
+      rect:
+        serializedVersion: 2
+        x: 3680
+        y: 0
+        width: 368
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33ecf84bb78ec6d90800000000000000
+      internalID: -7103046894262170061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blacksmith_background_11
+      rect:
+        serializedVersion: 2
+        x: 4048
+        y: 0
+        width: 368
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f211bc11ec6ae5b0800000000000000
+      internalID: -5338334694189493511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blacksmith_background_12
+      rect:
+        serializedVersion: 2
+        x: 4416
+        y: 0
+        width: 368
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3a8afaf36634c960800000000000000
+      internalID: 7621276272458107453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blacksmith_background_13
+      rect:
+        serializedVersion: 2
+        x: 4784
+        y: 0
+        width: 368
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93af3d36a0e2193f0800000000000000
+      internalID: -895884228710630855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blacksmith_background_14
+      rect:
+        serializedVersion: 2
+        x: 5152
+        y: 0
+        width: 368
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab313ab02baf28390800000000000000
+      internalID: -7817410360555400262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blacksmith_background_15
+      rect:
+        serializedVersion: 2
+        x: 5520
+        y: 0
+        width: 368
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6eb98bf8a68692420800000000000000
+      internalID: 2605728666297605094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blacksmith_background_16
+      rect:
+        serializedVersion: 2
+        x: 5888
+        y: 0
+        width: 368
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec9e958a0b472ed00800000000000000
+      internalID: 1000490369317202382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blacksmith_background_17
+      rect:
+        serializedVersion: 2
+        x: 6256
+        y: 0
+        width: 368
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a2aa2a3c5477d850800000000000000
+      internalID: 6401713334792135330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blacksmith_background_18
+      rect:
+        serializedVersion: 2
+        x: 6624
+        y: 0
+        width: 368
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a9f4764fa23f06c0800000000000000
+      internalID: -4175062601166423640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blacksmith_background_19
+      rect:
+        serializedVersion: 2
+        x: 6992
+        y: 0
+        width: 368
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfe53a95ddc86ac80800000000000000
+      internalID: -8311801179946131715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blacksmith_background_20
+      rect:
+        serializedVersion: 2
+        x: 7360
+        y: 0
+        width: 368
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5aedb01ff4d66d360800000000000000
+      internalID: 7194057644884876965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blacksmith_background_21
+      rect:
+        serializedVersion: 2
+        x: 7728
+        y: 0
+        width: 368
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 635e0b2c68ffff580800000000000000
+      internalID: -8791026993346845386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blacksmith_background_22
+      rect:
+        serializedVersion: 2
+        x: 8096
+        y: 0
+        width: 368
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef7f1c295ec3b1620800000000000000
+      internalID: 2745855354519812094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blacksmith_background_23
+      rect:
+        serializedVersion: 2
+        x: 8464
+        y: 0
+        width: 368
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2711851dce8d15bc0800000000000000
+      internalID: -3796014499260526222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
