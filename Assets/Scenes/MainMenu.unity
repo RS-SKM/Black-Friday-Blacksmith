@@ -383,6 +383,7 @@ GameObject:
   - component: {fileID: 1646414867}
   - component: {fileID: 1646414869}
   - component: {fileID: 1646414868}
+  - component: {fileID: 1646414870}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -406,7 +407,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -116}
   m_SizeDelta: {x: 640, y: 480}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1646414868
@@ -442,7 +443,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Press "space" to start
+  m_Text: Press "space" to PLAY
 --- !u!222 &1646414869
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -451,3 +452,15 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1646414866}
   m_CullTransparentMesh: 1
+--- !u!114 &1646414870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1646414866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 076a15817beb41e4f80cdd12f25f4d00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

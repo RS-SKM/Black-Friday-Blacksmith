@@ -7,7 +7,7 @@ public class GameMaster : MonoBehaviour
 {
     int lives;
     static GameMaster masterInstance;
-    int lastGame;
+    int lastGame = 10;
     int currentGame = 10;
     int gameSpeed = 1;
 
@@ -29,7 +29,7 @@ public class GameMaster : MonoBehaviour
     public void ChangeGame() {
         currentGame = Random.Range(2, 4);
         while( currentGame == lastGame ) {
-            currentGame = Random.Range(0, 3);
+            currentGame = Random.Range(2, 4);
         }
         Debug.Log("Game chosen is " + currentGame);
         SceneManager.LoadScene(currentGame);
@@ -39,7 +39,7 @@ public class GameMaster : MonoBehaviour
         if( !success ) {
             lives -= 1;
             if (lives <= 0) {
-                
+                SceneManager.LoadScene(5);
             }
         }
     }

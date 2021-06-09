@@ -9,7 +9,7 @@ public class HammerGame : MonoBehaviour
     Animator anim;
     public GameObject[] indicators;
     public float margin;
-    public bool victory = false;
+    bool fail = false;
     GameMaster gM;
 
     // Start is called before the first frame update
@@ -17,6 +17,7 @@ public class HammerGame : MonoBehaviour
     {
         anim = this.GetComponent<Animator>();
         gM = GameObject.Find("GameMaster").GetComponent<GameMaster>();
+        gameSpeed = gM.GetGameSpeed();
     }
 
     // Update is called once per frame
@@ -46,19 +47,23 @@ public class HammerGame : MonoBehaviour
         if( indicators[0] ) {
             if(transform.position.x <= indicators[0].transform.position.x+margin && transform.position.x >= indicators[0].transform.position.x - margin ) {
                 Destroy(indicators[0]);
+            } else {
+                fail = true;
             }
-        }
-        if( indicators[1] ) {
+        } else if( indicators[1] ) {
             if( transform.position.x <= indicators[1].transform.position.x + margin && transform.position.x >= indicators[1].transform.position.x - margin ) {
                 Destroy(indicators[1]);
+            } else {
+                fail = true;
             }
+        } else {
+            fail = true;
         }
     }
 
     void VictoryCheck() {
-        if( !indicators[0] && !indicators[1] ) {
-            victory = true;
-            
+        if( !indicators[0] && !indicators[1] && !fail) {
+            gM.GameOutcome(true);
         }
     }
 }

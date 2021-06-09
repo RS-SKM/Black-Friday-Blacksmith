@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TimerMainScene : MonoBehaviour
 {
-    float timeLimit = 8;
+    float timeLimit = 4;
     [SerializeField] float timeBar = 0;
     int gameSpeed;
     GameMaster gM;
