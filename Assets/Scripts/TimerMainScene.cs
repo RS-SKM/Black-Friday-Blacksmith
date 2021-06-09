@@ -6,7 +6,7 @@ public class TimerMainScene : MonoBehaviour
 {
     float timeLimit = 4;
     [SerializeField] float timeBar = 0;
-    int gameSpeed;
+    float gameSpeed;
     GameMaster gM;
 
     // Start is called before the first frame update
