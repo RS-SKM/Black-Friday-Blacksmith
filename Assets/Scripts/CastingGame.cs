@@ -8,7 +8,7 @@ public class CastingGame : MonoBehaviour
     public float holdDownDuration;
     float gameSpeed = 1;
     float maxHoldDownDuration = 3.5f;
-    TimerCastingGame timerCG;
+    TimerMiniGame timerCG;
 
     public Sprite[] spriteArray;
     SpriteRenderer myRenderer;
@@ -17,7 +17,7 @@ public class CastingGame : MonoBehaviour
     private void Awake()
     {
         anim = GameObject.Find("Crucible").GetComponent<Animator>();
-        timerCG = GameObject.Find("Timer").GetComponent<TimerCastingGame>();
+        timerCG = GameObject.Find("Timer").GetComponent<TimerMiniGame>();
     }
 
     void Start()

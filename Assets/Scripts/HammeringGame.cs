@@ -9,11 +9,11 @@ public class HammeringGame : MonoBehaviour
     SpriteRenderer swordSpriteRenderer;
     SpriteRenderer hammerSpriteRenderer;
     int swordSpriteOrder = 0;
-    TimerHammeringGame timerHG;
+    TimerMiniGame timerMG;
 
     void Start()
     {
-        timerHG = GameObject.Find("Timer").GetComponent<TimerHammeringGame>();
+        timerMG = GameObject.Find("Timer").GetComponent<TimerMiniGame>();
         swordSpriteRenderer = GameObject.Find("Sword").GetComponent<SpriteRenderer>();
         swordSpriteRenderer.sprite = swordSpriteArray[0];
         hammerSpriteRenderer = GameObject.Find("Hammer").GetComponent<SpriteRenderer>();
