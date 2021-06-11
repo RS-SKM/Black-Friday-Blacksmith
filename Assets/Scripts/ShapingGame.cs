@@ -12,6 +12,9 @@ public class ShapingGame : MonoBehaviour
     bool fail = false;
     TimerShapingGame timerSG;
     GameMaster gM;
+    SpriteRenderer shieldSprite;
+    public Sprite[] shieldStates;
+    int shieldStateInt=0;
 
     // Start is called before the first frame update
     void Awake()
@@ -20,6 +23,7 @@ public class ShapingGame : MonoBehaviour
         timerSG = GameObject.Find("Timer").GetComponent<TimerShapingGame>();
         gM = GameObject.Find("GameMaster").GetComponent<GameMaster>();
         gameSpeed = gM.GetGameSpeed();
+        shieldSprite= GameObject.Find("Shield").GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -49,17 +53,32 @@ public class ShapingGame : MonoBehaviour
         if( indicators[0] ) {
             if(transform.position.x <= indicators[0].transform.position.x+margin && transform.position.x >= indicators[0].transform.position.x - margin ) {
                 Destroy(indicators[0]);
+                if( !fail ) {
+                    shieldSprite.sprite = shieldStates[shieldStateInt];
+                    shieldStateInt++;
+                }
             } else {
                 fail = true;
             }
         } else if( indicators[1] ) {
             if( transform.position.x <= indicators[1].transform.position.x + margin && transform.position.x >= indicators[1].transform.position.x - margin ) {
                 Destroy(indicators[1]);
+                if( !fail ) {
+                    shieldSprite.sprite = shieldStates[shieldStateInt];
+                    shieldStateInt++;
+                }
             } else {
                 fail = true;
+                if( !fail ) {
+                    shieldSprite.sprite = shieldStates[4];
+                }
             }
         } else {
             fail = true;
+            if( !fail ) {
+                shieldSprite.sprite = shieldStates[5];
+                shieldStateInt++;
+            }
         }
     }
 
