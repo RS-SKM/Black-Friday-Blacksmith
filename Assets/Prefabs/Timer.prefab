@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1464867914449876660}
   - component: {fileID: 868360847827966623}
   - component: {fileID: 3011316510951807154}
-  - component: {fileID: 7024433233001865591}
+  - component: {fileID: 7854127471512095005}
   m_Layer: 5
   m_Name: Timer
   m_TagString: Untagged
@@ -26,7 +26,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3673732095005110321}
-  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
+  m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -35,8 +35,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -324, y: 15}
-  m_SizeDelta: {x: 136.47, y: 171.86}
+  m_AnchoredPosition: {x: -314, y: 0}
+  m_SizeDelta: {x: 431.4, y: 164.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &868360847827966623
 CanvasRenderer:
@@ -76,7 +76,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &7024433233001865591
+--- !u!114 &7854127471512095005
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -85,6 +85,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 3673732095005110321}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed0d77da0aa5223429610c415c2e9bfe, type: 3}
+  m_Script: {fileID: 11500000, guid: 9fbebf145320822458ad57eb7554c55d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
