@@ -80,6 +80,7 @@ public class CastingGame : MonoBehaviour
             {
                 Debug.Log("Filled");
                 myRenderer.sprite = spriteArray[3];
+                FindObjectOfType<AudioManager>().Play("Win");
                 oneTime3 = true;
                 timerCG.VictoryCheck(true);
             }
@@ -90,6 +91,7 @@ public class CastingGame : MonoBehaviour
             {
                 Debug.Log("Overfilled");
                 myRenderer.sprite = spriteArray[4];
+                FindObjectOfType<AudioManager>().Play("Lose");
                 oneTime4 = true;
                 timerCG.VictoryCheck(false);
             }

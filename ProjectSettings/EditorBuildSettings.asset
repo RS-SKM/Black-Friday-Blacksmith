@@ -18,8 +18,8 @@ EditorBuildSettings:
     path: Assets/Scenes/CastingGame.unity
     guid: 7befac71ab4a08a4cbff7da7ca82c3d2
   - enabled: 1
-    path: Assets/Scenes/RathTesting.unity
-    guid: d34fd5b59c4a3c14d930ddb7f997a87c
+    path: Assets/Scenes/HammeringGame.unity
+    guid: de0fd1c1f6cf16d4284efd62c7bb574d
   - enabled: 1
     path: Assets/Scenes/GameOver.unity
     guid: 53be4b0e7cd200f40b9d46556f7a1adf

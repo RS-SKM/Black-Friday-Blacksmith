@@ -58,28 +58,33 @@ public class ShapingGame : MonoBehaviour
             if(transform.position.x <= indicator0X+margin && transform.position.x >= indicator0X-margin && indicators[0]) {
                 if( !fail ) {
                     Destroy(indicators[0]);
+                    FindObjectOfType<AudioManager>().Play("Hit Indicator");
                     shieldSprite.sprite = shieldStates[shieldStateInt];
                     shieldStateInt++;
                 }
             } else if( transform.position.x <= indicator1X + margin && transform.position.x >= indicator1X - margin && indicators[1]) {
                 if( !fail ) {
                     Destroy(indicators[1]);
+                    FindObjectOfType<AudioManager>().Play("Hit Indicator");
                     shieldSprite.sprite = shieldStates[shieldStateInt];
                     shieldStateInt++;
                 }
             } else {
                 fail = true;
                 shieldSprite.sprite = shieldStates[3];
+                FindObjectOfType<AudioManager>().Play("Win");
             }
         } else {
             fail = true;
             shieldSprite.sprite = shieldStates[4];
+            FindObjectOfType<AudioManager>().Play("Lose");
         }
     }
 
     void VictoryCheck() {
         if( !indicators[0] && !indicators[1] && !fail) {
             timer.VictoryCheck(true);
+            FindObjectOfType<AudioManager>().Play("Win");
         }
     }
 }

@@ -44,11 +44,13 @@ public class HammeringGame : MonoBehaviour
     {
         if(swordSpriteOrder == 3)
         {
+            FindObjectOfType<AudioManager>().Play("Win");
             timerMG.VictoryCheck(true);
         }
 
         if(swordSpriteOrder == 4)
         {
+            FindObjectOfType<AudioManager>().Play("Lose");
             timerMG.VictoryCheck(false);
         }
     }

@@ -2,10 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Audio;
 
 public class GameMaster : MonoBehaviour
 {
-    int lives;
+    int lives = 3;
     static GameMaster masterInstance;
     int lastGame = 10;
     int currentGame = 10;
@@ -15,7 +16,7 @@ public class GameMaster : MonoBehaviour
     public float GetGameSpeed() {
         return gameSpeed;
     }
-    
+
     // Start is called before the first frame update
     void Awake()
     {
@@ -25,6 +26,11 @@ public class GameMaster : MonoBehaviour
         } else {
             Object.Destroy(this.gameObject);
         }
+    }
+
+    void Start()
+    {
+        FindObjectOfType<AudioManager>().Play("Background Music");
     }
 
     private void Update() {
@@ -59,7 +65,7 @@ public class GameMaster : MonoBehaviour
         rounds = +1;
         if( rounds > 4 ) {
             rounds = 0;
-            gameSpeed += 1;
+            gameSpeed += 0.5f;
         }
     }
 }

@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class TimerMiniGame : MonoBehaviour
 {
-    float timeLimit = 20;
+    float timeLimit = 6;
     float gameSpeed;
     float timeBar;
     GameMaster gM;

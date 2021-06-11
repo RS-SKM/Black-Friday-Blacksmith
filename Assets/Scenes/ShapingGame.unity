@@ -392,9 +392,9 @@ MonoBehaviour:
   - {fileID: 1183619041}
   margin: 0.1
   shieldStates:
-  - {fileID: 5085415284296604745, guid: 3eb2d90b002329a49bf4d28d1f5934dd, type: 3}
   - {fileID: 1691966074973790518, guid: 3eb2d90b002329a49bf4d28d1f5934dd, type: 3}
   - {fileID: -4135836072091612975, guid: 3eb2d90b002329a49bf4d28d1f5934dd, type: 3}
+  - {fileID: -7604838462600041511, guid: 3eb2d90b002329a49bf4d28d1f5934dd, type: 3}
   - {fileID: -7604838462600041511, guid: 3eb2d90b002329a49bf4d28d1f5934dd, type: 3}
   - {fileID: -2326387718176073400, guid: 3eb2d90b002329a49bf4d28d1f5934dd, type: 3}
 --- !u!95 &363276509
