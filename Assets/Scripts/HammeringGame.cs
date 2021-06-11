@@ -44,12 +44,12 @@ public class HammeringGame : MonoBehaviour
     {
         if(swordSpriteOrder == 3)
         {
-            timerHG.VictoryCheck(true);
+            timerMG.VictoryCheck(true);
         }
 
         if(swordSpriteOrder == 4)
         {
-            timerHG.VictoryCheck(false);
+            timerMG.VictoryCheck(false);
         }
     }
     //really janky substitute for an animator

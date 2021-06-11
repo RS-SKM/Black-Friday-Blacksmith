@@ -8,9 +8,11 @@ public class ShapingGame : MonoBehaviour
     bool animating;
     Animator anim;
     public GameObject[] indicators;
+    float indicator0X;
+    float indicator1X;
     public float margin;
     bool fail = false;
-    TimerShapingGame timerSG;
+    TimerMiniGame timer;
     GameMaster gM;
     SpriteRenderer shieldSprite;
     public Sprite[] shieldStates;
@@ -20,10 +22,12 @@ public class ShapingGame : MonoBehaviour
     void Awake()
     {
         anim = this.GetComponent<Animator>();
-        timerSG = GameObject.Find("Timer").GetComponent<TimerShapingGame>();
+        timer = GameObject.Find("Timer").GetComponent<TimerMiniGame>();
         gM = GameObject.Find("GameMaster").GetComponent<GameMaster>();
         gameSpeed = gM.GetGameSpeed();
         shieldSprite= GameObject.Find("Shield").GetComponent<SpriteRenderer>();
+        indicator0X = indicators[0].transform.position.x;
+        indicator1X = indicators[1].transform.position.x;
     }
 
     // Update is called once per frame
@@ -50,41 +54,32 @@ public class ShapingGame : MonoBehaviour
     }
 
     void IndicatorCheck() {
-        if( indicators[0] ) {
-            if(transform.position.x <= indicators[0].transform.position.x+margin && transform.position.x >= indicators[0].transform.position.x - margin ) {
-                Destroy(indicators[0]);
+        if( indicators[0] || indicators[1] ) {
+            if(transform.position.x <= indicator0X+margin && transform.position.x >= indicator0X-margin && indicators[0]) {
                 if( !fail ) {
+                    Destroy(indicators[0]);
+                    shieldSprite.sprite = shieldStates[shieldStateInt];
+                    shieldStateInt++;
+                }
+            } else if( transform.position.x <= indicator1X + margin && transform.position.x >= indicator1X - margin && indicators[1]) {
+                if( !fail ) {
+                    Destroy(indicators[1]);
                     shieldSprite.sprite = shieldStates[shieldStateInt];
                     shieldStateInt++;
                 }
             } else {
                 fail = true;
-            }
-        } else if( indicators[1] ) {
-            if( transform.position.x <= indicators[1].transform.position.x + margin && transform.position.x >= indicators[1].transform.position.x - margin ) {
-                Destroy(indicators[1]);
-                if( !fail ) {
-                    shieldSprite.sprite = shieldStates[shieldStateInt];
-                    shieldStateInt++;
-                }
-            } else {
-                fail = true;
-                if( !fail ) {
-                    shieldSprite.sprite = shieldStates[4];
-                }
+                shieldSprite.sprite = shieldStates[3];
             }
         } else {
             fail = true;
-            if( !fail ) {
-                shieldSprite.sprite = shieldStates[5];
-                shieldStateInt++;
-            }
+            shieldSprite.sprite = shieldStates[4];
         }
     }
 
     void VictoryCheck() {
         if( !indicators[0] && !indicators[1] && !fail) {
-            timerSG.VictoryCheck(true);
+            timer.VictoryCheck(true);
         }
     }
 }

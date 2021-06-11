@@ -390,7 +390,7 @@ MonoBehaviour:
   indicators:
   - {fileID: 1939401634}
   - {fileID: 1183619041}
-  margin: 0.7
+  margin: 0.1
   shieldStates:
   - {fileID: 5085415284296604745, guid: 3eb2d90b002329a49bf4d28d1f5934dd, type: 3}
   - {fileID: 1691966074973790518, guid: 3eb2d90b002329a49bf4d28d1f5934dd, type: 3}
@@ -545,7 +545,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1302478502}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e17f42e0836afc24a89830b25f158da9, type: 3}
+  m_Script: {fileID: 11500000, guid: 9fbebf145320822458ad57eb7554c55d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!4 &1302478504
