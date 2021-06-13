@@ -12,6 +12,7 @@ public class GameMaster : MonoBehaviour
     int currentGame = 10;
     float gameSpeed = 1;
     int rounds = 0;
+    public GameObject[] heartsCounter;
 
     public float GetGameSpeed() {
         return gameSpeed;
@@ -58,6 +59,7 @@ public class GameMaster : MonoBehaviour
         Debug.Log(success);
         if( !success ) {
             lives -= 1;
+            heartsCounter[lives].GetComponent<SpriteRenderer>().enabled = false;
             if (lives <= 0) {
                 SceneManager.LoadScene(5);
             }
