@@ -12,7 +12,8 @@ public class GameMaster : MonoBehaviour
     int currentGame = 10;
     float gameSpeed = 1;
     int rounds = 0;
-    public GameObject[] heartsCounter;
+    SpriteRenderer hearts;
+    public Sprite[] heartsCounter;
 
     public float GetGameSpeed() {
         return gameSpeed;
@@ -27,6 +28,7 @@ public class GameMaster : MonoBehaviour
         } else {
             Object.Destroy(this.gameObject);
         }
+        hearts = GameObject.Find("Hearts").GetComponent<SpriteRenderer>();
     }
 
     void Start()
@@ -47,9 +49,9 @@ public class GameMaster : MonoBehaviour
     }
 
     public void ChangeGame() {
-        currentGame = Random.Range(2, 4);
+        currentGame = Random.Range(2, 5);
         while( currentGame == lastGame ) {
-            currentGame = Random.Range(2, 4);
+            currentGame = Random.Range(2, 5);
         }
         Debug.Log("Game chosen is " + currentGame);
         SceneManager.LoadScene(currentGame);
@@ -59,7 +61,8 @@ public class GameMaster : MonoBehaviour
         Debug.Log(success);
         if( !success ) {
             lives -= 1;
-            heartsCounter[lives].GetComponent<SpriteRenderer>().enabled = false;
+            Debug.Log(lives);
+            hearts.sprite = heartsCounter[lives];
             if (lives <= 0) {
                 SceneManager.LoadScene(5);
             }
