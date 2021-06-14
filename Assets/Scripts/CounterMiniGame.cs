@@ -1,10 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CounterMiniGame : MonoBehaviour
 {
+    int addScore = 0;
     static GameObject miniGameCounter;
+    Text myText;
     // Start is called before the first frame update
     void Awake()
     {
@@ -17,11 +20,12 @@ public class CounterMiniGame : MonoBehaviour
         {
             Object.Destroy(this.gameObject);
         }
+        myText = this.GetComponent<Text>();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void AddScore()
     {
-        
+        addScore++;
+        myText.text = addScore.ToString();
     }
 }

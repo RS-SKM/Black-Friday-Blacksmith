@@ -14,6 +14,7 @@ public class TimerMiniGame : MonoBehaviour
     Image myImage;
     Color32 red;
     float fraction;
+    bool victory;
 
     // Start is called before the first frame update
     void Start()
@@ -26,17 +27,10 @@ public class TimerMiniGame : MonoBehaviour
         red = new Color32(255, 0, 0, 0);
     }
 
-    public void VictoryCheck(bool success = false)
+    public void VictoryCheck(bool success)
     {
-        if (success == true)
-        {
-            gM.GameOutcome(success);
-        }
-        if (!success)
-        {
-            gM.GameOutcome(success);
-        }
-
+        victory = success;
+        gM.GameOutcome(victory);
     }
     // Update is called once per frameS
     void Update()
@@ -44,7 +38,7 @@ public class TimerMiniGame : MonoBehaviour
         timeBar += Time.deltaTime;
         if(timeBar >= timeLimit)
         {
-            gM.GameOutcome(false);
+            gM.GameOutcome(victory);
             SceneManager.LoadScene(1);
         }
 
