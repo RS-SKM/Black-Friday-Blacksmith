@@ -68,6 +68,7 @@ public class GameMaster : MonoBehaviour
         if( rounds > 4 ) {
             rounds = 0;
             gameSpeed += 0.5f;
+            FindObjectOfType<AudioManager>().SpeedUp(gameSpeed);
         }
     }
 }

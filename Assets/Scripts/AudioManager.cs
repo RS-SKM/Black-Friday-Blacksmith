@@ -40,10 +40,14 @@ public class AudioManager : MonoBehaviour
         }
         s.source.Play();
     }
+
+    public void SpeedUp(float speed)
+    {
+        sounds[0].pitch = speed;
+    }
     // Start is called before the first frame update
     void Start()
     {
-        
     }
 
     // Update is called once per frame
