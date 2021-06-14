@@ -20,7 +20,7 @@ public class CounterMiniGame : MonoBehaviour
         {
             Object.Destroy(this.gameObject);
         }
-        myText = this.GetComponent<Text>();
+        myText = this.GetComponentInChildren<Text>();
     }
 
     public void AddScore()

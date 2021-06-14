@@ -14,6 +14,8 @@ public class GameMaster : MonoBehaviour
     int rounds = 0;
     SpriteRenderer hearts;
     public Sprite[] heartsCounter;
+    CounterMiniGame counterMiniGame;
+    bool oneTime = false;
 
     public float GetGameSpeed() {
         return gameSpeed;
@@ -29,6 +31,7 @@ public class GameMaster : MonoBehaviour
             Object.Destroy(this.gameObject);
         }
         hearts = GameObject.Find("Hearts").GetComponent<SpriteRenderer>();
+        counterMiniGame = GameObject.Find("Mini Game Counter").GetComponent<CounterMiniGame>();
     }
 
     void Start()
@@ -55,12 +58,18 @@ public class GameMaster : MonoBehaviour
         }
         Debug.Log("Game chosen is " + currentGame);
         SceneManager.LoadScene(currentGame);
+        oneTime = true;
+        if(oneTime)
+        {
+            counterMiniGame.AddScore();
+        }
+
     }
 
     public void GameOutcome(bool success ) {
         Debug.Log(success);
-        if( !success ) {
-            lives -= 1;
+        if ( !success ) {
+            lives--;
             Debug.Log(lives);
             hearts.sprite = heartsCounter[lives];
             if (lives <= 0) {
